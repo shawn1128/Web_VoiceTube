@@ -20,3 +20,38 @@
     font-size: 18px;
     margin: 0 auto;
 }
+
+
+.tab-content{
+	overflow:visible;
+
+}
+
+.mode-section {
+    overflow-y: hidden;
+    margin-left: 6px;
+    min-width: 312px;
+}
+
+
+#video-container {
+    padding-bottom: 0;
+}
+.content-area {
+    padding: 22px;
+}
+.container {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+
+
+.icon-play-circle::before {
+    content: "";
+    background-image: url('button.jpg');
+    background-size: 10px 20px;
+    width:10px;
+    height:20px;
+    display: block;
+}
