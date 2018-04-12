@@ -21,37 +21,30 @@
     margin: 0 auto;
 }
 
-
-.tab-content{
-	overflow:visible;
-
+.nav-pad {
+	padding-bottom: 20px; 
+	padding-top:20px;
 }
 
-.mode-section {
-    overflow-y: hidden;
-    margin-left: 6px;
-    min-width: 312px;
+.img-logo {
+	height: 28px; 
+	position: relative; 
+	top: -5px; 
+	width: auto;
 }
 
-
-#video-container {
-    padding-bottom: 0;
-}
-.content-area {
-    padding: 22px;
-}
-.container {
-    margin-right: auto;
-    margin-left: auto;
+.left-margin{
+	margin-left: 10px;
 }
 
 
-
-.icon-play-circle::before {
+.clearfix::after {
     content: "";
-    background-image: url('button.jpg');
-    background-size: 10px 20px;
-    width:10px;
-    height:20px;
-    display: block;
+    clear: both;
+    display: table;
 }
+
+
+
+
+

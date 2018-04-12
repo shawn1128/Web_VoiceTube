@@ -21,6 +21,7 @@
 		<link rel="stylesheet" type="text/css" href="css/subdropdown.css">
 		<link rel="stylesheet" type="text/css" href="css/divider-vertical.css">
 		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/player.css">
 		<!-- My JS -->
 		<script type="text/javascript" src="js/player.js"></script>
 		<script type="text/javascript" src="js/caption.js"></script>
@@ -31,7 +32,7 @@
 
 	<body>
 		
-		<nav class="navbar navbar-inverse" style="padding-bottom: 15px; padding-top:15px;">
+		<nav class="navbar navbar-inverse" style=" padding-bottom: 15px; padding-top:15px;">
 			<div class="container-fluid">
 
 				<div class="navbar-header">
@@ -215,23 +216,42 @@
 			</div>
 		</nav>
 		<div class="clearfix"></div>
-		<div id="video-container" class="content-area container">
-			<div class="tab-content">
-				<span class="player-section col-sm-6 colwide" style="height: 418px;" id="muteYouTubeVideoPlayer">
-					<script async src="https://www.youtube.com/iframe_api"></script>	
-				</span>
-				<span class="mode-section col-sm-5 colwide" >
-					<div class="caption-section" >
-							<div id="wrapper" style="height: 418px; overflow-x: hidden; overflow-y: scroll;">
-
-							</div>
-							<script type="text/javascript" src="js/caption.js"></script>
+		<div class = "top-area">
+			<div class="container">
+				<div class="col">
+					<div class="vt-progress-nav white" id="progress">
+						聽力
+						<div class="vt-progress-nav-bar" style="left: 29px; width: 64px;"></div>
 					</div>
-					
-				</span>
-				
+				</div>
 			</div>
-		</div>
+
+			<div id="video-container" class="content-area container">
+				<div class="tab-content">
+					<span class="player-section span5 colwide" style="height: 418px;" id="muteYouTubeVideoPlayer">
+						<script async src="https://www.youtube.com/iframe_api"></script>	
+					</span>
+
+					<span class="larger-section span1">
+						<i id="fold-middle" class="icon-white icon-double-angle-right"></i>
+
+					</span>
+
+					<span class="mode-section span5" 
+						style="height: 518px; display: block;">
+
+						<div class="caption-section" >
+								<div id="caption_detail" style="overflow-x: hidden; overflow-y: scroll;">
+
+								</div>
+								<script type="text/javascript" src="js/caption.js"></script>
+						</div>
+						
+					</span>
+					
+				</div>
+			</div>
+	</div>
 
 		
 	</body>
