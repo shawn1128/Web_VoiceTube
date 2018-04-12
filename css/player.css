@@ -12,9 +12,11 @@
 
 #video-container {
     padding-bottom: 0;
+    padding-left:0;
+    padding-right:0;
 }
 .content-area {
-    padding: 22px;
+    padding-top: 22px;
 }
 .container {
     margin-right: auto;
@@ -78,25 +80,13 @@
     color: #fff;
 }
 
-@media (min-width: 979px)
-.player-section.span5.colwide {
-    width: 53%;
-}
 
-.player-section.span5, .player-section.span11 {
-    position: relative;
-}
+
 
 .player-section {
     color: #fff;
 }
 
-@media (min-width: 1200px)
-[class*="span"] {
-    float: left;
-    min-height: 1px;
-    margin-left: 30px;
-}
 
 [class^="icon-"], [class*=" icon-"] {
     display: inline;
@@ -140,16 +130,57 @@
     overflow-y: hidden;
     margin-left: 6px;
     min-width: 312px;
-    width: 470px;
 }
-/*
-@media (min-width: 1200px)
-.span5 {
-    width: 470px;
+
+.larger-section.col-sm-1{
+    width: 13px;
+    margin-left: 8px;
+    height: 270px;
+    padding-top: 250px;
+    cursor: pointer;
+    opacity: .3;
+
 }
-@media (min-width: 1200px)
-[class*="span"] {
-    float: left;
-    min-height: 1px;
-    margin-left: 30px;
-}*/
+
+.larger-section:hover{
+    opacity: 1;
+}
+
+.col-sm-5{
+    width:47%;
+
+}
+
+td, th{
+    display: table-cell;
+
+}
+
+.fa-angle-double-right:before {
+    content: "\f101";
+    color: white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+.fa-angle-double-left:before {
+    content: "\f100";
+    color: white;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+
+.fa-angle-double-left:hover, .fa-angle-double-right:hover{
+    content: "\f100";
+    color: green;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+}
+
+
+

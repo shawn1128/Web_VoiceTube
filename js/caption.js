@@ -36,7 +36,8 @@ for(var key in captions.en){
 			'<a href="javascript:;" onclick="playCaptions('+Number(captions.en[key].start)+', '+Number(captions.en[key].dur)+');">' +
 				'<span class="glyphicon glyphicon-play"></span>'+
 			'</a>'+
+			//'<div id="seq-' + key + '" start="'+captions.en[key].start+'" end="'+ Number(captions.en[key].dur) +'">' +captions.en[key].text + '</div>'+
 		'</td>');
 	
-	container.append('<div id="seq-' + key + '" start="'+captions.en[key].start+'" end="'+ Number(captions.en[key].dur) +'">' +captions.en[key].text + '</div>');
+	container.append('<td id="seq-' + key + '" start="'+captions.en[key].start+'" end="'+ Number(captions.en[key].dur) +'">' +captions.en[key].text + '</td>');
 }

@@ -1,5 +1,32 @@
 var player;
 
+
+document.getElementById("fold-middle").addEventListener("click", fullScreen);
+
+function fullScreen(){
+
+
+  
+  var classVal = document.getElementById("fold-middle").getAttribute("class");
+  if(classVal == "fa-angle-double-right"){
+    $(".mode-section").hide();
+    classVal = classVal.replace("fa-angle-double-right", "fa-angle-double-left");
+    document.getElementById("fold-middle").setAttribute("class", classVal);
+    document.getElementById("muteYouTubeVideoPlayer").style.width = "96%";
+  }else{
+    $(".mode-section").show();
+    classVal = classVal.replace("fa-angle-double-left", "fa-angle-double-right");
+    document.getElementById("fold-middle").setAttribute("class", classVal);
+    document.getElementById("muteYouTubeVideoPlayer").style.width = "47%";
+
+  }
+    
+
+  
+ // $("#player-section").style.width=100%;
+
+}
+
 function onYouTubeIframeAPIReady() {
 
   player = new YT.Player('muteYouTubeVideoPlayer', {
